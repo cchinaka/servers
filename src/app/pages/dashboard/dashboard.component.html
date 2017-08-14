@@ -1,0 +1,19 @@
+<srv-page title="Server Detail" *ngIf="server">
+  <div class="row">
+    <div class="col-sm-6" *ngFor="let detail of server.servers">
+      <div class="card bg-light mb-3">
+        <div class="card-header">
+          {{detail.name}}
+          <span class="float-right"><span class="badge badge-secondary">{{detail.region}}</span></span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <strong>Resource Group:</strong> {{detail.resourcegroup}}<br/>
+            <strong>Power State:</strong> {{detail.powerstate}}<br/>
+            <span *ngIf="detail.ip"><strong>IP: </strong> {{detail.ip}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</srv-page>

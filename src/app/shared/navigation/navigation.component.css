@@ -1,0 +1,25 @@
+.app-menu {
+  margin-top: 5rem;
+  font-size: 85%;
+}
+
+.menu-section {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+  font-size: 105%;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #aeaeae;
+  text-transform: uppercase;
+}
+
+a.nav-link {
+  border-radius: 0rem;
+}
+
+a.nav-link.active {
+  cursor: default;
+  border-left: 2px solid #1997c6;
+  color: darkblue;
+}
